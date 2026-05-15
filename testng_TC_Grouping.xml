@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/DELL/IdeaProjects/ATB15xAPIAutomationPrograms">
+        <groups>
+            <run>
+                <include name="positive">
+                </include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.companyname.projectname.ex_02_RestAssured_Basics.API_testing_PrioritySettingAndGrouping">
+                <methods>
+                    <include name="Test_Hello_World"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
