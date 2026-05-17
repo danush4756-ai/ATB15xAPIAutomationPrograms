@@ -1,10 +1,9 @@
 package com.companyname.projectname.ex_02_RestAssured_Basics;
 
-import com.companyname.projectname.utils.APIUtils;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static com.companyname.projectname.utils.APIUtils.validatePincodeAndStstusCode;
+import static com.companyname.projectname.utils.APIUtils.validatePinCodeAndStatusCode;
 
 public class TaskPINCodeValidationTCs {
 
@@ -26,7 +25,7 @@ public class TaskPINCodeValidationTCs {
     }
     @Test(dataProvider = "pinCode and statusCode")/*pinCode and statusCode This is the same in line 11
     and this line so the connection is happening to read the data.*/
-    public void testPincode(String pincode, int expectedStatusCode) {
-        validatePincodeAndStstusCode(pincode, expectedStatusCode);
+    public void testPinCode(String PinCode, int expectedStatusCode) {
+        validatePinCodeAndStatusCode(PinCode, expectedStatusCode);
     }
 }

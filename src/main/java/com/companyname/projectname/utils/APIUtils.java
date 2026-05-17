@@ -3,7 +3,7 @@ package com.companyname.projectname.utils;
 import io.restassured.RestAssured;
 
 public class APIUtils {
-    public static void validatePincodeAndStstusCode(String pincode, int expectedStatusCode) {
+    public static void validatePinCodeAndStatusCode(String pincode, int expectedStatusCode) {
 
         RestAssured
                 .given()
